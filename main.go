@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	s "./Solutions"
 )
 
@@ -10,4 +12,7 @@ func main() {
 
 	x := []int32{1, 3, 5, 7, 9}
 	s.MiniMaxSum(x)
+
+	time := "02:34:00PM"
+	fmt.Println(s.TimeConversion(time))
 }
