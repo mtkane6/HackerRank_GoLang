@@ -15,4 +15,10 @@ func main() {
 
 	time := "02:34:00PM"
 	fmt.Println(s.TimeConversion(time))
+
+	for i := range x[:] {
+		for j := range x[i+1:] {
+			fmt.Println(i, j+i+1)
+		}
+	}
 }
