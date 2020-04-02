@@ -28,10 +28,9 @@ func Kangaroo(x1 int32, v1 int32, x2 int32, v2 int32) string {
 	for x1 <= x2 {
 		if x1 == x2 {
 			return "YES"
-		} else {
-			x1 += v1
-			x2 += v2
 		}
+		x1 += v1
+		x2 += v2
 	}
 	return "NO"
 }
