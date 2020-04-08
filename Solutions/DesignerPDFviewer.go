@@ -23,7 +23,7 @@ word: a string
 
 */
 
-// DesignerPdrViewer returns the length of the word * height of the tallest letter
+// DesignerPdfViewer returns the length of the word * height of the tallest letter
 func DesignerPdfViewer(h []int32, word string) int32 {
 	var maxHeight int32 = 0
 	letterMap := make(map[string]int)
