@@ -42,9 +42,9 @@ func PickingNumbers(a []int32) int32 {
 	return maxlen
 }
 
-func abs(x int32) int32 {
-	if x < 0 {
-		return -x
-	}
-	return x
-}
+// func abs(x int32) int32 {
+// 	if x < 0 {
+// 		return -x
+// 	}
+// 	return x
+// }
