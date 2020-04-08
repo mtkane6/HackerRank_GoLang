@@ -18,7 +18,7 @@ height: an array of integers denoting the heights of each hurdle
 
 */
 
-// Returns the amount of potion needed to jump over all the hurdles.
+// HurdleRace returns the amount of potion needed to jump over all the hurdles.
 func HurdleRace(k int32, height []int32) int32 {
 	var maxHeight int32 = 0
 	for _, v := range height {
