@@ -30,7 +30,7 @@ a: an array of integers representing arrival times
 
 */
 
-// Angry professor determines whether or not class is cancelled based on attendance
+// AngryProfessor determines whether or not class is cancelled based on attendance
 func AngryProfessor(k int32, a []int32) string {
 	var onTime int32 = 0
 	for _, v := range a {
