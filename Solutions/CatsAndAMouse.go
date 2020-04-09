@@ -36,9 +36,9 @@ func CatAndMouse(x int32, y int32, z int32) string {
 	}
 }
 
-func abs(x int32) int32 {
-	if x < 0 {
-		return -x
-	}
-	return x
-}
+// func abs(x int32) int32 {
+// 	if x < 0 {
+// 		return -x
+// 	}
+// 	return x
+// }
