@@ -26,7 +26,7 @@ func BeautifulDays(i int32, j int32, k int32) int32 {
 	var returnValue int32 = 0
 	for i <= j {
 		reversedNum = reverse(i, reversedNum)
-		if abs(i-reversedNum)%k == 0 {
+		if absol(i-reversedNum)%k == 0 {
 			returnValue++
 		}
 		reversedNum = 0
@@ -44,7 +44,7 @@ func reverse(x, result int32) int32 {
 	return result
 }
 
-func abs(x int32) int32 {
+func absol(x int32) int32 {
 	if x < 0 {
 		return -x
 	}

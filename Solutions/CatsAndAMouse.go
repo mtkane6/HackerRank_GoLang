@@ -27,18 +27,18 @@ z: an integer, Mouse 's position
 
 // CatAndMouse determines which cat, if any, will catch the mouse
 func CatAndMouse(x int32, y int32, z int32) string {
-	if abs(x-z) < abs(y-z) {
+	if absolute(x-z) < absolute(y-z) {
 		return fmt.Sprintf("Cat A")
-	} else if abs(x-z) > abs(y-z) {
+	} else if absolute(x-z) > absolute(y-z) {
 		return fmt.Sprintf("Cat B")
 	} else {
 		return fmt.Sprintf("Mouse C")
 	}
 }
 
-// func abs(x int32) int32 {
-// 	if x < 0 {
-// 		return -x
-// 	}
-// 	return x
-// }
+func absolute(x int32) int32 {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
