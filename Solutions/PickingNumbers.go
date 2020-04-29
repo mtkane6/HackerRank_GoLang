@@ -26,7 +26,7 @@ func PickingNumbers(a []int32) int32 {
 		result = append(result, v)
 		for j, k := range a {
 			if i != j {
-				if result[0] >= k && abs(result[0]-k) <= 1 {
+				if result[0] >= k && absi(result[0]-k) <= 1 {
 					result = append(result, k)
 				}
 			}
@@ -42,9 +42,9 @@ func PickingNumbers(a []int32) int32 {
 	return maxlen
 }
 
-// func abs(x int32) int32 {
-// 	if x < 0 {
-// 		return -x
-// 	}
-// 	return x
-// }
+func absi(x int32) int32 {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
