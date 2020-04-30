@@ -13,8 +13,8 @@ func main() {
 	x := []int32{1, 3, 5, 7, 9}
 	s.MiniMaxSum(x)
 
-	time := "02:34:00PM"
-	fmt.Println(s.TimeConversion(time))
+	// time := "02:34:00PM"
+	// fmt.Println(s.TimeConversion(time))
 
 	for i := range x[:] {
 		for j := range x[i+1:] {
@@ -22,5 +22,5 @@ func main() {
 		}
 	}
 
-	s.BeautifulDays(47)
+	// s.BeautifulDays(47)
 }
